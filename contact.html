@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <title>Contact Me</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Rubik', sans-serif;
+            color: #032539;
+            background-image: url(./pics/bgcontact.avif);
+            background-size: cover;
+            background-position: bottom;
+        }
+        nav{
+            background-color: #fa991c;
+            font-size: 18px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: start;
+            align-items: center;
+            overflow: visible;
+        }
+        nav a{
+            text-decoration: none;
+            border-right: 2px solid #fa991c;
+            padding: 10px;
+            color: #fbf3f2;
+            border-radius: 0 50% 0 50%;
+        }
+        a:hover{
+            background-color: #f8b55d;
+            transform: scale(1.1);
+        }
+        .main{
+            height: 100vh;
+            position: relative;
+        }
+        main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        h1{
+            text-align: center;
+            background-color: #fbf3f2d7;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        form{
+            width: 350px;
+            border: 1px solid #032539;
+            border-radius: 10px;
+            background-color: #fbf3f2d7;
+            padding: 5px;
+        }
+        form *{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        p{
+            padding-top: 15px;
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        label{
+            padding: 4px;
+            
+        }
+        input,select,textarea{
+            padding: 4px;
+            margin-left: 14px;
+            border: 1px solid #032539;
+            border-radius: 4px;
+        }
+        input[type="text"],select,textarea{
+            width: 310px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"],input[type="reset"]{
+            width: 80px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./education.html">Education</a>
+        <a href="./work.html">Work Experience</a>
+        <a href="./contact.html">Contact Me</a>
+    </nav>
+    <div class="main">
+    <main>
+        <h1>Contact Me</h1>
+        <form action="#">
+            <p>Enter your info..</p>
+            <label for="name">Your name</label><br>
+            <input type="text" id="name" placeholder="Name"><br>
+            <label for="email">Your E-mail</label><br>
+            <input type="text" id="name" placeholder="E-mail"><br>
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="" disabled selected hidden>Choose your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="not_specified">Not specified</option>
+            </select><br>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="write something.."></textarea><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </form>
+    </main>
+    </div>
+</body>
+</html>
